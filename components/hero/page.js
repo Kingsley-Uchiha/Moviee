@@ -25,16 +25,17 @@ async function getData() {
 export default async function Hero() {
   const data = await getData()
   const banner = data.results[0];
-  console.log(banner);
+  // console.log(banner);
 
   return (
-    <header>
+    <header className='p-10'>
       <div>
         <Image
           src={`https://image.tmdb.org/t/p/original${banner.backdrop_path}`}
-          width={100}
-          height={100}
-          alt="{}"
+          width={600}
+          height={600}
+          alt={`${banner.name} banner`}
+          className='rounded-md'
         />
       </div>
     </header>

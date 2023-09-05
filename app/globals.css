@@ -29,4 +29,5 @@ body {
 .app {
   left: 221px;
   top: 110px;
+  width: calc(100vw - 221px);
 }
