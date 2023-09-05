@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 async function getData() {
   const options = {
@@ -38,9 +39,19 @@ export default async function Hero() {
           className="rounded-md inset-0"
         />
         <div className="absolute bg-dark h-full over z-10 top-0"></div>
+        <h1 className="absolute z-20 bottom-16 left-3 font-medium text-lg font-montserrat">
+          {banner.name}
+        </h1>
+        <div className="absolute flex gap-2 items-center bottom-3 left-3 z-20">
+          <Image src="/rate star.png" width={30} height={30} alt="Rating" />
+          <span>{banner.vote_average}</span>
+        </div>
       </div>
-      <h1 className="">{banner.name}</h1>
-      <p className="">{banner.overview}</p>
+      <p className="max-w-xl">{banner.overview}</p>
+      <div className='flex gap-3'>
+        <Link href="#" className='bg-red px-6 py-1 rounded-2xl'>Watch Trailer</Link>
+        <Link href="#" className='bg-blue py-1 px-3 rounded-2xl'>B</Link>
+      </div>
     </header>
   );
 }
