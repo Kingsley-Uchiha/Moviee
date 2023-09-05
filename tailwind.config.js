@@ -21,6 +21,7 @@ module.exports = {
         background: "var(--background)",
         red: "var(--crimson)",
         container: "var(--container)",
+        dark: "var(--dark)",
       },
     },
   },

@@ -2,8 +2,8 @@ import Link from 'next/link';
 
 export default function SideNav() {
   return (
-    <nav className="bg-container fixed top-0 left-0 h-full flex flex-col font-poppins py-20 px-10 justify-between">
-      <div className="logo">
+    <nav className="bg-container rounded-md fixed top-4 left-2 bottom-4 flex flex-col font-poppins py-20 px-10 justify-between">
+      <div className="logo font-montserrat text-lg font-medium">
         M<span className="">o</span>viee
       </div>
       <ul className="flex flex-col gap-4">

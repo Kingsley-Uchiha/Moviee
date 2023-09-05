@@ -25,19 +25,22 @@ async function getData() {
 export default async function Hero() {
   const data = await getData()
   const banner = data.results[0];
-  // console.log(banner);
+  console.log(banner);
 
   return (
-    <header className='p-10'>
-      <div>
+    <header className="p-10 flex flex-col gap-4">
+      <div className="relative inline-block rounded-md overflow-hidden">
         <Image
           src={`https://image.tmdb.org/t/p/original${banner.backdrop_path}`}
-          width={600}
+          width={700}
           height={600}
           alt={`${banner.name} banner`}
-          className='rounded-md'
+          className="rounded-md inset-0"
         />
+        <div className="absolute bg-dark h-full over z-10 top-0"></div>
       </div>
+      <h1 className="">{banner.name}</h1>
+      <p className="">{banner.overview}</p>
     </header>
   );
 }

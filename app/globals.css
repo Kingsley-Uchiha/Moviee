@@ -6,6 +6,7 @@
   --foreground: #4A4E4D;
   --background: #FDFDFD;
   --crimson: #E63946;
+  --dark: rgba(74, 78, 77, 0.5);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,4 +31,8 @@ body {
   left: 221px;
   top: 110px;
   width: calc(100vw - 221px);
+}
+
+.over {
+  width: 700px;
 }
