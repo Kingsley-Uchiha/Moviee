@@ -9,6 +9,9 @@ const nextConfig = {
         pathname: "https://image.tmdb.org/t/p/original/",
       },
     ],
+    loader: "default",
+    minimumCacheTTL: 60,
+    domains: ["image.tmdb.org"],
   },
 };
 
