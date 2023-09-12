@@ -13,8 +13,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground: #FDFDFD;
-    --background: #0d1725;
-    --container: #1D3557;
+    --background: #060a10;
+    --container: rgba(29, 53, 87, 0.6);
   }
 }
 
@@ -23,17 +23,7 @@ body {
   background: var(--background);
 }
 
-.nav {
-  left: 221px;
-  width: calc(100vw - 221px);
-}
-
-.app {
-  left: 221px;
-  top: 110px;
-  width: calc(100vw - 221px);
-}
-
 .over {
   width: 700px;
+  /* object-fit: cover; */
 }

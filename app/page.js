@@ -5,12 +5,16 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="text-foreground bg-background">
-      <SideNav />
-      <TopNav />
-      <div className='app relative'>
-        <Hero />
-      </div>
-    </main>
+    // * Clear everything & restart
+    <>
+      <main className="text-foreground bg-background grid grid-cols-6">
+        <SideNav />
+        <div className="relative col-span-5">
+          <TopNav />
+          <Hero />
+        </div>
+      </main>
+      <footer></footer>
+    </>
   );
 }
